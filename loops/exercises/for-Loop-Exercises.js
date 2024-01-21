@@ -28,18 +28,42 @@
 
 
 
-/*Exercise #2: 
-Initialize two variables to hold the string “LaunchCode” and the array [1, 5, ‘LC101’, ‘blue’, 42].
+// *Exercise #2: 
+// Initialize two variables to hold the string “LaunchCode” and the array [1, 5, ‘LC101’, ‘blue’, 42].
+
+// let str = "LaunchCode";
+// let arr = [1, 5, 'LC101', 'blue', 42];
+
+// Construct ``for`` loops to accomplish the following tasks:
+// a. Print each element of the array to a new line.
+
+      // for (let i = 0; i < arr.length; i++) {
+      //   console.log(arr[i]);
+      // }
+// b. Print each character of the string - in reverse order - to a new line. */ 
+
+    // let reversed = "";
+    // for (let i = 0; i < str.length; i++) {
+    //   reversed = str[i] + reversed
+    // }
+    //   console.log(reversed);
 
 
-Construct ``for`` loops to accomplish the following tasks:
-  a. Print each element of the array to a new line.
-  b. Print each character of the string - in reverse order - to a new line. */ 
 
 
+// // *Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
+let arr = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104]
+// // a. One array contains the even numbers, and the other holds the odds.
+let evenArr = []
+let oddArr = []
 
-
-
-/*Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
-  a. One array contains the even numbers, and the other holds the odds.
-  b. Print the arrays to confirm the results. */
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0) {
+    evenArr.push(arr[i]);
+  } else {
+    oddArr.unshift(arr[i]);  ////curious if it matters whether to use push or unshift here
+  }                         ////// as the strings are empty
+}
+// // b. Print the arrays to confirm the results. */
+console.log(evenArr);
+console.log(oddArr);
